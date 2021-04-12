@@ -1,0 +1,30 @@
+The paper outlines a method for finding a trace of events capable of completing
+a flexible manufacturing system (FMS) task in minimal, although not necessarily
+optimal time. The method proposed is an estimation of distribution algorithm (EDA).
+In addition the paper gives experimental results for there algorithm which
+suggests that there method can outperform other similar algorithms in many
+situations, sometimes markedly so. I am not familiar enough with the area to
+evaluate how generally the method developed can be applied, or whether the
+method only has application to a very constrain instance of problems.
+
+Issues:
+A full page is dedicated to the longest common substring problem. The longest common substring problem
+is both old and relatively well known. In addition the solution which is shown was
+developed in the seventies, and for those who are interested in learning the
+details of how to calculate the LCS there are numerous easily accessible
+resources available which will explain how it is done. That is to say there is
+no reason why 1/6 of the space available for this paper should be devoted to
+explaining the LCS problem. That space should be used to describe the actual
+contributions made in this paper. In particular certain aspects of the algorithm
+are ill defined. For example the paper states that if an invalid trace is
+generated the algorithm "Amend"s it so that it becomes a valid one, but it is not
+described how this is done. I'm assuming that there is some standard way of
+doing this for Flexible Manufacturing System petri net models. But no reference
+is made to when "Amend" is first mentioned.
+Similarly the local heuristic search aspect of the algorithm is only very broadly
+described. Finally very little space is given to describing how E is calculated
+this is in spite of the fact that E is what makes the algorithm an EDA rather
+than a genetic algorithm which uses LCS in it breeding step.
+Again the page spent describing LCS could have been far better spent giving more
+details to the actual contributions of the paper, while giving a brief
+description of LCS with references. 
